@@ -1,3 +1,5 @@
+package TreeImplementation;
+
 public class TreeNode<E extends Comparable<E>>  {
     BSTNode<E> root;
 
