@@ -1,3 +1,9 @@
+package TreeImplementation;
+
+/**
+ * BSTNode class is used to implement tree functions. Contains left and right child for parent node
+ * @param <E>
+ */
 public class BSTNode<E extends Comparable<E>> {
     protected E data;
     protected BSTNode<E> left;
@@ -206,7 +212,8 @@ public class BSTNode<E extends Comparable<E>> {
                 System.out.println(this.getElement());
                 return;
             }
-
         }
     }
+
+
 }
