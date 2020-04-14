@@ -1,3 +1,5 @@
+package TreeImplementation;
+
 public class TestBST {
     public static void main(String[] args) {
         TreeNode<Integer> tree = new TreeNode<Integer>();
