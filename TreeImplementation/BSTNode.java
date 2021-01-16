@@ -1,5 +1,9 @@
 package TreeImplementation;
 
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * BSTNode class is used to implement tree functions. Contains left and right child for parent node
  * @param <E>
@@ -215,5 +219,25 @@ public class BSTNode<E extends Comparable<E>> {
         }
     }
 
+    public void breadFirstOrder() {
+        if (this == null) {
+            //tree is empty
+            return;
+        }
+        else {
+            Queue<BSTNode<E>> queue = new LinkedList<BSTNode<E>>();
+            queue.add(this);
+            while (!queue.isEmpty()) {
+                System.out.print(queue.peek().data + " ");
+                BSTNode node = queue.remove();
 
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+        }
+    }
 }
