@@ -240,4 +240,10 @@ public class BSTNode<E extends Comparable<E>> {
             }
         }
     }
+
+    public void reverseLeftAndRight() {
+        BSTNode leftDuplicate = this.left;
+        this.left = this.right;
+        this.right = leftDuplicate;
+    }
 }
