@@ -52,4 +52,6 @@ public class TreeNode<E extends Comparable<E>>  {
    public void postOrder() {this.root.postorder();}
 
    public void breadthFirstOrder() {this.root.breadFirstOrder();}
+
+   public void reverseLeftAndRight() {this.root.reverseLeftAndRight();}
 }
