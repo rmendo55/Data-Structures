@@ -19,6 +19,9 @@ public class TestBST {
         tree.preorder();
         tree.postOrder();
         tree.breadthFirstOrder();
+        tree.reverseLeftAndRight();
+        System.out.println();
+        tree.breadthFirstOrder();
     }
 
 }
